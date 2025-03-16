@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>سیستم بن و رفع بن</title>
+</head>
+<body>
+    <h2>بن کردن کاربر</h2>
+    <form id="banForm">
+        <label for="banIp">IP برای بن:</label>
+        <input type="text" id="banIp" name="banIp" placeholder="مثال: 192.168.1.1">
+        <button type="submit">بن کن</button>
+    </form>
+
+    <h2>رفع بن</h2>
+    <form id="unbanForm">
+        <label for="unbanIp">IP برای رفع بن:</label>
+        <input type="text" id="unbanIp" name="unbanIp" placeholder="مثال: 192.168.1.1">
+        <button type="submit">رفع بن</button>
+    </form>
+
+    <h3>IP فعلی شما:</h3>
+    <p id="currentIp"></p>
+
+    <h3>لیست بن‌شده‌ها:</h3>
+    <ul id="banList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
